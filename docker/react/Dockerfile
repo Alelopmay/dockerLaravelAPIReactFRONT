@@ -11,4 +11,4 @@ RUN npm run build
  
 # Production Stage
 FROM nginx:stable-alpine AS production
-COPY --from=build /ReactViteSkel/dist /usr/share/nginx/html
+COPY --from=build /ProyectoConApi/apiReact/dist /usr/share/nginx/html
